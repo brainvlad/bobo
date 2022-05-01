@@ -1,0 +1,103 @@
+@import "../variables.scss";
+
+.welcome {
+  max-height: 660px;
+  height: 100vh;
+  background-image: url(./../../assets/img/index/welcome-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+
+  &__container {
+    display: flex;
+    height: inherit;
+    max-height: 660px;
+  }
+
+  &__present {
+    width: 450px;
+    max-height: calc(660px + 50px);
+    height: inherit;
+    background-color: $welcome-bg;
+    position: relative;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    padding-left: 10%;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 110px;
+    line-height: 129px;
+    padding-bottom: 36px;
+  }
+
+  &__subtitle {
+    padding-top: 26px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 185px;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: $acs2;
+    }
+  }
+}
+
+.welcome-slider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+.welcome-slider__item {
+}
+
+// slick
+
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+.slick-dots {
+  position: absolute;
+  right: 0;
+  display: flex;
+  gap: 30px;
+
+  & li {
+    list-style: none;
+
+    &.slick-active button {
+      background-color: $welcome-bg;
+    }
+  }
+  & button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: $title;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+}
+
+// slick
