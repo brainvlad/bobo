@@ -1,0 +1,41 @@
+@import "variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-decoration: none;
+  color: $noon;
+  border: 1px solid $element;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 6px 20px;
+  background-color: $white;
+  transition: all 0.25s;
+  cursor: pointer;
+
+  @include tablet-small {
+    margin-bottom: 15px;
+  }
+
+  &:hover {
+    color: $title;
+    border-color: $acs1-50;
+    background-color: $acs1-50;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 10px;
+}

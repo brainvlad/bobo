@@ -1,0 +1,65 @@
+@import "variables.scss";
+
+.footer {
+  padding: 56px 0 72px 0;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__col {
+  }
+
+  &__logo {
+    width: 130px;
+
+    &-img {
+      width: 100%;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__form {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 20px 50px;
+  }
+
+  &__form-title {
+  }
+
+  &__form-input {
+    border: 1px solid #dcdcdc;
+    border-bottom: 1px solid #646464;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 4px 20px;
+    outline: none;
+  }
+}

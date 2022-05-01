@@ -1,0 +1,25 @@
+$acs1: #f2af29;
+$acs1-50: rgba(242, 175, 41, 0.5);
+$acs2: #5da399;
+$element: #595758;
+$title: #363838;
+$noon: #a3a2a2;
+$white: #fff;
+
+@mixin tablet-medium() {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablet-small() {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
