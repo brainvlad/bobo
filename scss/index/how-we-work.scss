@@ -1,0 +1,16 @@
+@import "../variables.scss";
+
+.timeline {
+  margin-bottom: 100px;
+  text-align: center;
+  &__picture {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > img {
+      width: 100%;
+    }
+  }
+}

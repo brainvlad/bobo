@@ -1,0 +1,56 @@
+@import "variables.scss";
+
+.gallery-line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  &__item {
+    position: relative;
+    aspect-ratio: 1/1;
+    width: 19%;
+    text-align: center;
+    background-color: $noon;
+  }
+
+  &__item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__item-overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: all 0.25s ease-in;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__item-title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  &__item-subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+  }
+}

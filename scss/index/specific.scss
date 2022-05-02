@@ -1,0 +1,37 @@
+@import "../variables.scss";
+
+.specific {
+  height: 616px;
+  background-color: $noon;
+  background-image: url(../../assets/img/index/specific-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  margin: 100px 0;
+  padding-top: 140px;
+
+  &__list {
+    padding-left: 20%;
+    position: relative;
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &::before {
+      content: "";
+      width: 200px;
+      height: 1px;
+      background-color: $acs2;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+  }
+}
