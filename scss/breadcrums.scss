@@ -1,0 +1,27 @@
+@import "variables.scss";
+
+.breadcrumbs {
+  background-image: url(./../assets/img/breadcrumbs-bg.jpg);
+  height: 338px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background-color: rgba(163, 162, 162, 0.5);
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 55px;
+    color: $element;
+  }
+}
