@@ -1,0 +1,36 @@
+@import "../variables.scss";
+
+.our {
+  background-color: $acs2;
+
+  &__container {
+    display: flex;
+  }
+
+  &__picture {
+    margin-left: -200px;
+  }
+
+  &__picture-img {
+  }
+
+  &__info {
+  }
+
+  &__title {
+    margin-top: -200px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    color: $title;
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    margin-top: 24px;
+  }
+}
