@@ -7,6 +7,13 @@
   justify-content: space-around;
   align-items: center;
 
+  &-sponsored {
+    margin-bottom: 20px;
+    & > .gallery-line__item {
+      background-color: transparent;
+    }
+  }
+
   &__item {
     position: relative;
     aspect-ratio: 1/1;

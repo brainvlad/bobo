@@ -1,0 +1,70 @@
+@import "./variables.scss";
+
+.contact {
+  &__social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+    padding: 20px 0;
+
+    & path {
+      transition: all 0.2s;
+    }
+    & svg:hover path {
+      fill: $acs1;
+    }
+  }
+
+  &__msg {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: $noon;
+  }
+
+  &__adress {
+    padding: 40px 0;
+  }
+
+  &__email {
+    width: fit-content;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: $title;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 24px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__form-row {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__form-input,
+  &__form-textarea {
+    font-family: "Roboto", sans-serif;
+    flex: 1 1 200px;
+    resize: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: $title;
+    padding: 6px 16px;
+    outline: none;
+    border: 1px solid $noon;
+    border-radius: 20px;
+  }
+}
