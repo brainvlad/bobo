@@ -324,11 +324,14 @@ a {
   gap: 30px; }
 .gallery__list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 2fr 3fr;
   grid-template-rows: 1fr 1fr;
   gap: 30px 30px;
   padding: 26px;
   grid-template-areas: "item-1 item-2 big" "item-3 item-4 big"; }
+.gallery__list-revers {
+  grid-template-columns: 3fr 2fr 2fr;
+  grid-template-areas: "big item-1 item-2" "big item-3 item-4"; }
 .gallery .big {
   grid-area: big; }
 .gallery .item-2 {
@@ -369,6 +372,9 @@ a {
     font-size: 16px;
     line-height: 55px;
     color: #595758; }
+  .breadcrumbs-clean {
+    height: 100px;
+    background-image: none; }
 
 .info {
   padding: 50px 0; }
@@ -394,13 +400,17 @@ a {
   margin-bottom: 235px; }
 
 .our {
-  background-color: #5da399; }
+  background-color: #5da399;
+  position: relative;
+  height: 366px;
+  margin-bottom: 50px; }
   .our__container {
     display: flex; }
   .our__picture {
-    margin-left: -200px; }
+    margin-top: -180px; }
+  .our__info {
+    margin-top: -190px; }
   .our__title {
-    margin-top: -200px;
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -412,5 +422,46 @@ a {
     font-size: 16px;
     line-height: 27px;
     margin-top: 24px; }
+
+.progressbar {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 34px; }
+  .progressbar__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px; }
+  .progressbar__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .progressbar__name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #363838; }
+  .progressbar__count {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #363838; }
+  .progressbar__line {
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #fff;
+    position: relative; }
+    .progressbar__line::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80%;
+      height: 2px;
+      background-color: #363838; }
 
 /*# sourceMappingURL=all.css.map */

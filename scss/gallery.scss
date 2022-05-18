@@ -10,13 +10,20 @@
 
   &__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 3fr;
     grid-template-rows: 1fr 1fr;
     gap: 30px 30px;
     padding: 26px;
     grid-template-areas:
       "item-1 item-2 big"
       "item-3 item-4 big";
+  }
+
+  &__list-revers {
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-areas:
+      "big item-1 item-2"
+      "big item-3 item-4";
   }
 
   .big {

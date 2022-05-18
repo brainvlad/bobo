@@ -24,4 +24,9 @@
     line-height: 55px;
     color: $element;
   }
+
+  &-clean {
+    height: 100px;
+    background-image: none;
+  }
 }
