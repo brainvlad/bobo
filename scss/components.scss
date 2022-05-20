@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  min-width: 320px;
+}
 
 .btn {
   font-family: "Roboto";
@@ -22,7 +25,7 @@
   transition: all 0.25s;
   cursor: pointer;
 
-  @include tablet-small {
+  @include tablet {
     margin-bottom: 15px;
   }
 
@@ -30,6 +33,15 @@
     color: $title;
     border-color: $acs1-50;
     background-color: $acs1-50;
+  }
+}
+.btn.disabled {
+  opacity: 0.5;
+  &:hover {
+    color: $noon;
+    border-color: $element;
+    background-color: $white;
+    cursor: no-drop;
   }
 }
 

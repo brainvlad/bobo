@@ -58,3 +58,33 @@
 }
 .btn {
 }
+
+@include tablet() {
+  .gallery {
+    &__categorys {
+      gap: 15px;
+      row-gap: 0px;
+      flex-wrap: wrap;
+    }
+    &__list {
+      gap: 8px 8px;
+      padding: 14px;
+    }
+  }
+}
+@include mobile-large() {
+  .gallery {
+    &__list {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 2fr;
+      gap: 8px 8px;
+      padding: 0px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      grid-template-areas:
+        "item-1 item-2"
+        "item-3 item-4"
+        "big big";
+    }
+  }
+}

@@ -1,3 +1,4 @@
+$error: #f16066;
 $acs1: #f2af29;
 $welcome-bg: #f1d152;
 $acs1-50: rgba(242, 175, 41, 0.5);
@@ -7,20 +8,26 @@ $title: #363838;
 $noon: #a3a2a2;
 $white: #fff;
 
-@mixin tablet-medium() {
-  @media screen and (max-width: 992px) {
+@mixin pc-small() {
+  @media screen and (max-width: 1024px) {
     @content;
   }
 }
 
-@mixin tablet-small() {
+@mixin tablet() {
   @media screen and (max-width: 768px) {
     @content;
   }
 }
 
-@mixin mobile() {
+@mixin mobile-large() {
   @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin mobile-medium() {
+  @media screen and (max-width: 425px) {
     @content;
   }
 }

@@ -97,13 +97,13 @@
             <a href="mailto:bobo@email.com" class="contact__email">
               <i class="ci-mail"></i> bobo@email.com
             </a>
-            <form action="" class="contact__form">
+            <form action="" class="contact__form" id="contactForm">
               <div class="contact__form-row">
-                <input type="text" placeholder="Ваше имя" class="contact__form-input">
-                <input type="email" placeholder="Ваш e-mail" class="contact__form-input">
+                <input name="name" type="text" placeholder="Ваше имя" required class="contact__form-input">
+                <input name="email" type="email" placeholder="Ваш e-mail" required class="contact__form-input">
               </div>
               <div class="contact__form-row">
-                <textarea name="" id=""  rows="5" class="contact__form-textarea" placeholder="Ваше сообщение"></textarea>
+                <textarea name="message" id=""  rows="5" required class="contact__form-textarea" placeholder="Ваше сообщение"></textarea>
               </div>
               <button class="btn">Send</button>
             </form>
@@ -166,10 +166,11 @@
         </div>
         <div class="footer__col">
           <nav class="footer__nav">
-            <a href="" class="footer__link">Главная</a>
-            <a href="" class="footer__link">Каталог</a>
-            <a href="" class="footer__link">О нас</a>
-            <a href="" class="footer__link">Контакты</a>
+            <a href="./index.html" class="footer__link">Главная</a>
+            <a href="./gallery.html" class="footer__link">Каталог</a>
+            <a href="./about.html" class="footer__link">О нас</a>
+            <a href="./contact.html" class="footer__link">Контакты</a>
+            <a href="./sponsored.html" class="footer__link">Наши партнеры</a>
           </nav>
         </div>
         <div class="footer__col">
@@ -199,14 +200,19 @@
         <div class="footer__col">
           <form class="footer__form" action="" method="">
             <div class="footer__form-title">Свяжитесь с нами</div>
-            <input class="footer__form-input" placeholder="+375 ( . . )  - ___ - __ - __">
-            <button class="btn" type="submit">Заказать звонок</button>
+            <input class="footer__form-input" id="phone" placeholder="+375(__)-___-__-__">
+            <div class="btn disabled" id="phoneSubmit">Заказать звонок</div>
           </form>
         </div>
       </div>
     </footer>
-    <script src="js/jquery.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/validation.js"></script>
+    <script src="./js/sweetalert.js"></script>
+    <script src="./js/contact-form.js"></script>
   </body>
 </html>

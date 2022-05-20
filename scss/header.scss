@@ -1,7 +1,7 @@
 @import "variables.scss";
 
 .header {
-  height: 160px;
+  min-height: 160px;
   padding-top: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -45,5 +45,24 @@
     font-size: 12px;
     line-height: 14px;
     padding-bottom: 8px;
+    text-align: center;
+  }
+}
+
+@include tablet() {
+  .header {
+    min-height: initial;
+    padding-bottom: 24px;
+    &__theme {
+      display: none;
+    }
+  }
+}
+@include mobile-medium() {
+  .header {
+    &__nav {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 }

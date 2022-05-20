@@ -138,10 +138,11 @@
         </div>
         <div class="footer__col">
           <nav class="footer__nav">
-            <a href="" class="footer__link">Главная</a>
-            <a href="" class="footer__link">Каталог</a>
-            <a href="" class="footer__link">О нас</a>
-            <a href="" class="footer__link">Контакты</a>
+            <a href="./index.html" class="footer__link">Главная</a>
+            <a href="./gallery.html" class="footer__link">Каталог</a>
+            <a href="./about.html" class="footer__link">О нас</a>
+            <a href="./contact.html" class="footer__link">Контакты</a>
+            <a href="./sponsored.html" class="footer__link">Наши партнеры</a>
           </nav>
         </div>
         <div class="footer__col">
@@ -171,14 +172,19 @@
         <div class="footer__col">
           <form class="footer__form" action="" method="">
             <div class="footer__form-title">Свяжитесь с нами</div>
-            <input class="footer__form-input" placeholder="+375 ( . . )  - ___ - __ - __">
-            <button class="btn" type="submit">Заказать звонок</button>
+            <input class="footer__form-input" id="phone" placeholder="+375(__)-___-__-__">
+            <div class="btn disabled" id="phoneSubmit">Заказать звонок</div>
           </form>
         </div>
       </div>
     </footer>
-    <script src="js/jquery.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <!-- <script src="./js/jquery.validate.min.js"></script> -->
+    <!-- <script src="./js/slick.min.js"></script> -->
+    <!-- <script src="./js/slider.js"></script> -->
+    <script src="./js/validation.js"></script>
+    <script src="./js/sweetalert.js"></script>
+    <!-- <script src="./js/contact-form.js"></script> -->
   </body>
 </html>

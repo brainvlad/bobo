@@ -10,3 +10,6 @@
   max-width: 730px;
   margin: 150px auto 50px;
 }
+
+@include mobile-large() {
+}

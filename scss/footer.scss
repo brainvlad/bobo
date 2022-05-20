@@ -6,6 +6,7 @@
   &__container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
@@ -61,5 +62,52 @@
     line-height: 32px;
     padding: 4px 20px;
     outline: none;
+    transition: all 0.25s;
+
+    &.completed {
+      border-color: $acs1;
+    }
+  }
+}
+
+@include pc-small() {
+  .footer {
+    &__container {
+    }
+    &__col {
+      flex: 1 1 300px;
+    }
+  }
+}
+@include tablet() {
+  .footer {
+    &__container {
+      justify-content: space-around;
+    }
+    &__col {
+      width: fit-content;
+      flex: 1 1 200px;
+
+      &:first-child {
+        display: none;
+      }
+    }
+    &__nav {
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    &__logo {
+      display: none;
+    }
+    &__form {
+    }
+  }
+}
+@include mobile-medium() {
+  .footer {
+    &__form {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }

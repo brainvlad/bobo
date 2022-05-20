@@ -2,7 +2,9 @@
 
 .gallery-line {
   width: 100%;
+  gap: 8px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -16,8 +18,8 @@
 
   &__item {
     position: relative;
+    flex: 1 1 200px;
     aspect-ratio: 1/1;
-    width: 19%;
     text-align: center;
     background-color: $noon;
   }
@@ -59,5 +61,40 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 27px;
+  }
+}
+
+@include pc-small() {
+  .gallery-line {
+    &__item {
+      flex: 1 1 300px;
+    }
+    &-sponsored {
+      gap: 20px;
+      flex-wrap: nowrap;
+      & > .gallery-line__item {
+        flex: 1 1 100px;
+        background-color: transparent;
+      }
+    }
+  }
+}
+@include tablet() {
+  .gallery-line {
+    &-sponsored {
+      & > .gallery-line__item {
+        background-color: transparent;
+      }
+    }
+  }
+}
+@include mobile-medium() {
+  .gallery-line {
+    flex-wrap: wrap;
+    &-sponsored {
+      & > .gallery-line__item {
+        background-color: transparent;
+      }
+    }
   }
 }

@@ -15,7 +15,7 @@
   }
 
   &__present {
-    width: 450px;
+    min-width: 450px;
     max-height: calc(660px + 50px);
     height: inherit;
     background-color: $welcome-bg;
@@ -102,3 +102,86 @@
 }
 
 // slick
+
+@include pc-small() {
+  .welcome {
+    height: fit-content;
+    &__container {
+      flex-direction: column-reverse;
+    }
+    &__present {
+      margin-top: 0;
+      max-height: initial;
+      height: 500px;
+    }
+    &__info {
+      padding-bottom: 50px;
+    }
+  }
+  .welcome-slider {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome-slider__item {
+    height: 550px;
+    & > img {
+      height: 100%;
+    }
+  }
+  .slick-dots {
+    right: initial;
+    left: 80%;
+  }
+}
+@include mobile-large() {
+  .welcome {
+    height: fit-content;
+    &__present {
+      min-width: initial;
+      height: 300px;
+    }
+    &__title {
+      font-size: 62px;
+      line-height: 110%;
+      padding-bottom: 36px;
+    }
+
+    &__subtitle {
+      padding-top: 26px;
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 185px;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: $acs2;
+      }
+    }
+  }
+  .welcome-slider {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome-slider__item {
+    height: 350px;
+    & > img {
+      height: 100%;
+    }
+  }
+  .slick-track {
+    width: 100%;
+  }
+  .slick-dots {
+    right: initial;
+    left: 60%;
+  }
+}

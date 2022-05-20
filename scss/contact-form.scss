@@ -50,6 +50,7 @@
   &__form-row {
     display: flex;
     gap: 12px;
+    flex-wrap: wrap;
   }
 
   &__form-input,
@@ -66,5 +67,18 @@
     outline: none;
     border: 1px solid $noon;
     border-radius: 20px;
+    transition: all 0.25s;
+
+    &.valid {
+      border-color: $acs1;
+      width: 100%;
+    }
+    &.error {
+      border-color: $error;
+      width: 100%;
+    }
   }
+}
+label.error {
+  display: none !important;
 }
